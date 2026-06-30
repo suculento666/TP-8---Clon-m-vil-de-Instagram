@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "CatsGram",
+    "slug": "catsgram",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "platforms": ["ios", "android", "web"],
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0b0e27"
+      }
+    }
+  }
+}
