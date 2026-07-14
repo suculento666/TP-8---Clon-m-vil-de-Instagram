@@ -1,27 +1,35 @@
+// Feed: renderiza la lista de posts con FlatList
+// Responsabilidad única: mostrar los posts de forma eficiente
+// FlatList es obligatorio por la consigna — renderiza solo los ítems visibles
+// (a diferencia de map() que renderiza todos a la vez)
+
 import React from 'react'
-import { FlatList, StyleSheet } from 'react-native'
+import { FlatList, StyleSheet, View } from 'react-native'
 import type { Post } from '../../types'
 import PostCard from './PostCard'
+import { colors } from '../../theme'
 
 interface FeedProps {
   posts: Post[]
-  // Conjunto de IDs de publicaciones marcadas como "me gusta"
   likedIds: Set<string>
-  // Cambia el estado de "me gusta" de una publicación
   onToggleLike: (postId: string) => void
-  // Muestra los detalles de la publicación seleccionada
   onSelectPost: (post: Post) => void
-  // Componente que se renderiza arriba de la lista (ej: Stories)
+  // ListHeaderComponent permite insertar Stories arriba del feed
+  // y que scrolleen junto con los posts (mejor UX que un ScrollView externo)
   ListHeaderComponent?: React.ReactElement
 }
 
-const Feed = ({ posts, likedIds, onToggleLike, onSelectPost, ListHeaderComponent }: FeedProps) => {
+const Feed = ({
+  posts,
+  likedIds,
+  onToggleLike,
+  onSelectPost,
+  ListHeaderComponent,
+}: FeedProps) => {
   return (
     <FlatList
       data={posts}
       keyExtractor={(post) => post.id}
-      contentContainerStyle={styles.feed}
-      ListHeaderComponent={ListHeaderComponent}
       renderItem={({ item: post }) => (
         <PostCard
           post={post}
@@ -30,14 +38,22 @@ const Feed = ({ posts, likedIds, onToggleLike, onSelectPost, ListHeaderComponent
           onSelect={onSelectPost}
         />
       )}
+      ListHeaderComponent={ListHeaderComponent}
+      ItemSeparatorComponent={() => <View style={styles.separator} />}
+      showsVerticalScrollIndicator={false}
+      contentContainerStyle={styles.list}
     />
   )
 }
 
 const styles = StyleSheet.create({
-  feed: {
-    gap: 24,
-    paddingBottom: 24,
+  list: {
+    backgroundColor: colors.bgMain,
+    paddingBottom: 80, // espacio para que el último post no quede detrás del tab bar
+  },
+  separator: {
+    height: 0.5,
+    backgroundColor: colors.borderColor,
   },
 })
 

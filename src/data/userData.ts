@@ -1,13 +1,15 @@
-import type { User } from '../types';
+// Datos del usuario activo de la app
+// No requiere login real — simula un perfil ya autenticado
+
+import type { User } from '../types'
 
 export const currentUser: User = {
-  username: 'Señora M',
+  username: 'señora.m',
   fullName: 'Facunda Eusebich',
-  bio: '🐱 Amante de los gatos | Y d lor Mortiz',
-  // En React Native los assets locales se importan con require()
-  // Asegurate de tener el archivo en assets/leoMattioli.webp
-  avatar: 'local', // se reemplaza por require en el componente que lo use
-  posts: 10,
+  bio: '🐱 Amante de los gatos | 📍 Buenos Aires',
+  // URL de avatar de placeholder mientras no haya asset local
+  avatarUrl: 'https://api.thecatapi.com/v1/images/search?limit=1',
+  postsCount: 12,
   followers: 999,
   following: 163,
-};
+}

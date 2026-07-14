@@ -1,248 +1,175 @@
-import React from 'react'
+// PostDetail: vista extendida de un post
+// Este componente se usa en DetailScreen, que recibe el post por navegación
+// El like se maneja con useState local (interacción en tiempo real, como pide la consigna)
+
+import React, { useState } from 'react'
 import {
-  Modal,
   View,
   Text,
   Image,
-  Pressable,
   ScrollView,
   StyleSheet,
   Dimensions,
 } from 'react-native'
 import type { Post } from '../../types'
+import ActionBar from '../Feed/ActionBar'
+import Comment from './Comment'
+import { colors, spacing, fontSizes } from '../../theme'
 
 interface PostDetailProps {
-  post: Post | null
-  liked: boolean
-  onToggleLike: (postId: string) => void
-  onClose: () => void
+  post: Post
+  // El estado inicial del like viene de FeedScreen (para mantener consistencia)
+  initialLiked: boolean
 }
 
 const { width } = Dimensions.get('window')
 
-const PostDetail = ({ post, liked, onToggleLike, onClose }: PostDetailProps) => {
-  // Si no hay post seleccionado no se muestra nada, igual que en el web
-  if (!post) return null
+const PostDetail = ({ post, initialLiked }: PostDetailProps) => {
+  // useState local para el like — la consigna pide interacción en tiempo real
+  const [liked, setLiked] = useState<boolean>(initialLiked)
+  const [likesCount, setLikesCount] = useState<number>(post.likes)
 
-  const likesCount = liked ? post.likes + 1 : post.likes
+  const handleLike = () => {
+    if (liked) {
+      setLikesCount((prev) => prev - 1)
+    } else {
+      setLikesCount((prev) => prev + 1)
+    }
+    setLiked((prev) => !prev)
+  }
 
   return (
-    // Modal reemplaza al overlay fixed del web
-    <Modal
-      visible={!!post}
-      transparent
-      animationType="fade"
-      onRequestClose={onClose}
+    <ScrollView
+      style={styles.container}
+      showsVerticalScrollIndicator={false}
     >
-      {/* Overlay: toque fuera cierra el modal */}
-      <Pressable style={styles.overlay} onPress={onClose}>
+      {/* ── Header: avatar + username ── */}
+      <View style={styles.header}>
+        <Image
+          source={{ uri: post.avatarUrl }}
+          style={styles.avatar}
+          accessibilityLabel={`Avatar de ${post.username}`}
+        />
+        <View style={styles.headerText}>
+          <Text style={styles.username}>{post.username}</Text>
+          <Text style={styles.location}>{post.location}</Text>
+        </View>
+      </View>
 
-        {/* Contenedor del modal: stopPropagation equivalente */}
-        <Pressable style={styles.modal} onPress={() => {}}>
+      {/* ── Imagen en alta definición ── */}
+      <Image
+        source={{ uri: post.imageUrl }}
+        style={[styles.image, { height: width }]}
+        accessibilityLabel={post.caption}
+      />
 
-          {/* Botón cerrar */}
-          <Pressable style={styles.closeBtn} onPress={onClose} accessibilityLabel="Cerrar">
-            <Text style={styles.closeBtnText}>✕</Text>
-          </Pressable>
+      {/* ── Barra de acciones — reutiliza ActionBar igual que PostCard ── */}
+      <ActionBar
+        liked={liked}
+        onLike={handleLike}
+        onComment={() => {}}
+      />
 
-          {/* Imagen */}
-          <Image
-            source={{ uri: post.imageUrl }}
-            style={styles.image}
-            accessibilityLabel={post.caption}
-          />
+      {/* ── Likes y caption ── */}
+      <View style={styles.info}>
+        <Text style={styles.likes}>{likesCount.toLocaleString()} me gusta</Text>
+        <Text style={styles.caption}>
+          <Text style={styles.captionUsername}>{post.username} </Text>
+          {post.caption}
+        </Text>
+        <Text style={styles.date}>{post.date}</Text>
+      </View>
 
-          {/* Sección de info */}
-          <View style={styles.infoSection}>
+      {/* ── Separador ── */}
+      <View style={styles.divider} />
 
-            {/* Header: avatar + username */}
-            <View style={styles.header}>
-              <Image
-                source={{ uri: post.avatarUrl }}
-                style={styles.avatar}
-                accessibilityLabel={post.username}
-              />
-              <Text style={styles.username}>{post.username}</Text>
-            </View>
+      {/* ── Lista de comentarios ── */}
+      <View style={styles.comments}>
+        {post.comments.map((comment) => (
+          <Comment key={comment.id} comment={comment} />
+        ))}
+      </View>
 
-            {/* Comentarios scrolleables */}
-            <ScrollView style={styles.comments} contentContainerStyle={styles.commentsContent}>
-              {/* Caption */}
-              <Text style={styles.caption}>
-                <Text style={styles.bold}>{post.username} </Text>
-                {post.caption}
-              </Text>
-              {/* Lista de comentarios */}
-              {post.comments.map((comment) => (
-                <Text key={comment.id} style={styles.comment}>
-                  <Text style={styles.bold}>{comment.username} </Text>
-                  {comment.text}
-                </Text>
-              ))}
-            </ScrollView>
-
-            {/* Acciones */}
-            <View style={styles.actions}>
-              <View style={styles.actionRow}>
-                <Pressable onPress={() => onToggleLike(post.id)} accessibilityLabel="Me gusta">
-                  <Text style={styles.actionBtn}>{liked ? '❤️' : '🤍'}</Text>
-                </Pressable>
-                <Pressable accessibilityLabel="Comentar">
-                  <Text style={styles.actionBtn}>💬</Text>
-                </Pressable>
-                <Pressable accessibilityLabel="Compartir">
-                  <Text style={styles.actionBtn}>📤</Text>
-                </Pressable>
-              </View>
-              <Pressable accessibilityLabel="Guardar">
-                <Text style={styles.actionBtn}>🔖</Text>
-              </Pressable>
-            </View>
-
-            {/* Footer: likes + fecha */}
-            <View style={styles.footer}>
-              <Text style={styles.likes}>{likesCount} me gusta</Text>
-              <Text style={styles.date}>{post.date}</Text>
-            </View>
-
-          </View>
-        </Pressable>
-      </Pressable>
-    </Modal>
+    </ScrollView>
   )
 }
 
 const styles = StyleSheet.create({
-  // Overlay semitransparente
-  overlay: {
+  container: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.75)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  // Contenedor del modal
-  modal: {
-    width: width * 0.92,
-    maxHeight: '90%',
-    backgroundColor: '#1a1a2e',
-    borderRadius: 8,
-    borderWidth: 1,
-    borderColor: '#2a2a3e',
-    overflow: 'hidden',
-  },
-
-  // Botón cerrar flotante
-  closeBtn: {
-    position: 'absolute',
-    top: 10,
-    right: 10,
-    zIndex: 10,
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    backgroundColor: '#2a2a3e',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  closeBtnText: {
-    color: '#fff',
-    fontSize: 16,
-  },
-
-  // Imagen cuadrada
-  image: {
-    width: '100%',
-    height: width * 0.92, // cuadrado proporcional al ancho del modal
-    resizeMode: 'cover',
-  },
-
-  // Info section debajo de la imagen (en mobile va abajo, no al lado)
-  infoSection: {
-    flexDirection: 'column',
+    backgroundColor: colors.bgMain,
   },
 
   // Header
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: '#2a2a3e',
+    paddingHorizontal: spacing.lg,
+    paddingVertical: spacing.sm,
+    gap: spacing.sm,
   },
   avatar: {
     width: 34,
     height: 34,
     borderRadius: 17,
-    borderWidth: 2,
-    borderColor: '#c13584',
+    borderWidth: 1.5,
+    borderColor: colors.storyRing,
+  },
+  headerText: {
+    flex: 1,
   },
   username: {
-    fontSize: 14,
+    fontSize: fontSizes.sm,
     fontWeight: '700',
-    color: '#fff',
+    color: colors.textPrimary,
+  },
+  location: {
+    fontSize: fontSizes.xs,
+    color: colors.textSecondary,
+  },
+
+  // Imagen
+  image: {
+    width: '100%',
+    resizeMode: 'cover',
+  },
+
+  // Info
+  info: {
+    paddingHorizontal: spacing.lg,
+    paddingTop: spacing.xs,
+    gap: spacing.xs,
+  },
+  likes: {
+    fontSize: fontSizes.sm,
+    fontWeight: '700',
+    color: colors.textPrimary,
+  },
+  caption: {
+    fontSize: fontSizes.sm,
+    color: colors.textPrimary,
+    lineHeight: 18,
+  },
+  captionUsername: {
+    fontWeight: '700',
+  },
+  date: {
+    fontSize: fontSizes.xs,
+    color: colors.textMuted,
+    textTransform: 'uppercase',
   },
 
   // Comentarios
+  divider: {
+    height: 0.5,
+    backgroundColor: colors.borderColor,
+    marginTop: spacing.md,
+    marginHorizontal: spacing.lg,
+  },
   comments: {
-    maxHeight: 160,
-  },
-  commentsContent: {
-    padding: 16,
-    gap: 12,
-  },
-  caption: {
-    fontSize: 14,
-    color: '#fff',
-    lineHeight: 20,
-  },
-  comment: {
-    fontSize: 14,
-    color: '#fff',
-    lineHeight: 20,
-  },
-  bold: {
-    fontWeight: '700',
-  },
-
-  // Acciones
-  actions: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    paddingTop: 10,
-    paddingBottom: 6,
-    borderTopWidth: 1,
-    borderTopColor: '#2a2a3e',
-  },
-  actionRow: {
-    flexDirection: 'row',
-    gap: 14,
-  },
-  actionBtn: {
-    fontSize: 22,
-  },
-
-  // Footer
-  footer: {
-    paddingHorizontal: 16,
-    paddingTop: 6,
-    paddingBottom: 16,
-    gap: 4,
-  },
-  likes: {
-    fontSize: 14,
-    fontWeight: '700',
-    color: '#fff',
-  },
-  date: {
-    fontSize: 11,
-    color: '#aaa',
-    textTransform: 'uppercase',
-    letterSpacing: 0.5,
+    paddingHorizontal: spacing.lg,
+    paddingTop: spacing.sm,
+    paddingBottom: 100,
   },
 })
 

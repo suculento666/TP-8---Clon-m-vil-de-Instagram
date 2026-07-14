@@ -21,3 +21,206 @@
 {"_e":"metro:bundling:progress","_t":1782826774483,"id":"1","progress":0.999,"total":222,"current":222}
 {"_e":"metro:bundling:done","_t":1782826774587,"id":"1","total":222,"ms":1630.7325}
 {"_e":"metro:bundling:started","_t":1782826780142,"id":"4","platform":"web","environment":null,"entry":"App.tsx"}
+{"_e":"root:init","_t":1784028029991,"format":"v0-jsonl","version":"56.1.19"}
+{"_e":"env:mode","_t":1784028029992,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784028029994,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784028030152,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784028030400,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1784028034831,"atlas":false,"workers":10,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784028072982,"id":"1","platform":"web","environment":null,"entry":"App.tsx"}
+{"_e":"metro:bundling:progress","_t":1784028072982,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784028072985,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784028072989,"id":"1","message":"Cannot read properties of undefined (reading 'transformFile')","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1784028207660,"format":"v0-jsonl","version":"56.1.19"}
+{"_e":"env:mode","_t":1784028207661,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784028207663,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784028207821,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784028208070,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1784028212309,"atlas":false,"workers":10,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784028214873,"id":"1","platform":"web","environment":null,"entry":"App.tsx"}
+{"_e":"metro:bundling:progress","_t":1784028214873,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784028214876,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784028214880,"id":"1","message":"Cannot read properties of undefined (reading 'transformFile')","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784028227251,"id":"4","platform":"web","environment":null,"entry":"App.tsx"}
+{"_e":"metro:bundling:progress","_t":1784028227252,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784028227252,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784028227254,"id":"4","message":"Cannot read properties of undefined (reading 'transformFile')","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1784028233217,"format":"v0-jsonl","version":"56.1.19"}
+{"_e":"env:mode","_t":1784028233218,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784028233220,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784028233373,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784028233622,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1784028237952,"atlas":false,"workers":10,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784028238698,"id":"1","platform":"web","environment":null,"entry":"App.tsx"}
+{"_e":"metro:bundling:progress","_t":1784028238698,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784028238701,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784028238705,"id":"1","message":"Cannot read properties of undefined (reading 'transformFile')","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1784028855803,"format":"v0-jsonl","version":"56.1.19"}
+{"_e":"env:mode","_t":1784028855804,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784028855806,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784028855963,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784028856212,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1784028860807,"atlas":false,"workers":10,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784028866523,"id":"1","platform":"web","environment":null,"entry":"App.tsx"}
+{"_e":"metro:bundling:progress","_t":1784028866524,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784028866526,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784028866530,"id":"1","message":"Cannot read properties of undefined (reading 'transformFile')","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1784029149440,"format":"v0-jsonl","version":"56.1.19"}
+{"_e":"env:mode","_t":1784029149440,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784029149442,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784029149594,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784029149834,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1784029154088,"atlas":false,"workers":10,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784029218381,"id":"1","platform":"web","environment":null,"entry":"App.tsx"}
+{"_e":"metro:bundling:progress","_t":1784029218381,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784029218384,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784029218388,"id":"1","message":"Cannot read properties of undefined (reading 'transformFile')","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1784029506474,"format":"v0-jsonl","version":"56.1.19"}
+{"_e":"env:mode","_t":1784029506475,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784029506477,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784029506630,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784029506873,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1784029511105,"atlas":false,"workers":10,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784029521350,"id":"1","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784029521350,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784029521353,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784029521357,"id":"1","message":"Cannot read properties of undefined (reading 'transformFile')","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1784029718037,"format":"v0-jsonl","version":"56.1.19"}
+{"_e":"env:mode","_t":1784029718038,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784029718040,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784029718190,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784029718432,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1784029722648,"atlas":false,"workers":10,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784029725807,"id":"1","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784029725808,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784029725810,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784029725815,"id":"1","message":"Cannot read properties of undefined (reading 'transformFile')","importStack":null,"filename":null,"targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1784029804480,"format":"v0-jsonl","version":"56.1.19"}
+{"_e":"env:mode","_t":1784029804481,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784029804483,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784029804635,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784029804879,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1784029809271,"atlas":false,"workers":10,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784029812278,"id":"1","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784029812279,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784029812281,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784029812640,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1784029812754,"id":"1","progress":0.07438016528925619,"total":11,"current":3}
+{"_e":"metro:bundling:progress","_t":1784029812821,"id":"1","progress":0.1322314049586777,"total":11,"current":4}
+{"_e":"metro:bundling:progress","_t":1784029813164,"id":"1","progress":0.20661157024793386,"total":11,"current":5}
+{"_e":"metro:bundling:progress","_t":1784029813269,"id":"1","progress":0.27040000000000003,"total":50,"current":26}
+{"_e":"metro:bundling:progress","_t":1784029813369,"id":"1","progress":0.27040000000000003,"total":128,"current":53}
+{"_e":"metro:bundling:progress","_t":1784029813470,"id":"1","progress":0.29340277777777773,"total":168,"current":91}
+{"_e":"metro:bundling:progress","_t":1784029813570,"id":"1","progress":0.29340277777777773,"total":241,"current":123}
+{"_e":"metro:bundling:progress","_t":1784029813672,"id":"1","progress":0.40365481372604445,"total":266,"current":169}
+{"_e":"metro:bundling:progress","_t":1784029813772,"id":"1","progress":0.6021356889863384,"total":308,"current":239}
+{"_e":"metro:bundling:progress","_t":1784029813872,"id":"1","progress":0.7152039729151441,"total":337,"current":285}
+{"_e":"metro:bundling:progress","_t":1784029813973,"id":"1","progress":0.7396875343964675,"total":393,"current":338}
+{"_e":"metro:bundling:progress","_t":1784029814073,"id":"1","progress":0.7396875343964675,"total":477,"current":403}
+{"_e":"metro:bundling:progress","_t":1784029814173,"id":"1","progress":0.8672036930535237,"total":509,"current":474}
+{"_e":"metro:bundling:progress","_t":1784029814273,"id":"1","progress":0.989001000216263,"total":544,"current":541}
+{"_e":"metro:bundling:progress","_t":1784029814374,"id":"1","progress":0.996406112520056,"total":556,"current":555}
+{"_e":"metro:bundling:progress","_t":1784029815051,"id":"1","progress":0.999,"total":556,"current":556}
+{"_e":"metro:bundling:done","_t":1784029815172,"id":"1","total":556,"ms":2893.5928}
+{"_e":"metro:client_log","_t":1784029815296,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1784029815296,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1784029815302,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:bundling:started","_t":1784029821501,"id":"5","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:client_log","_t":1784029932313,"level":"warn","data":["Image: style.resizeMode is deprecated. Please use props.resizeMode."]}
+{"_e":"metro:bundling:started","_t":1784029946672,"id":"7","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:started","_t":1784029946782,"id":"8","platform":"web","environment":null,"entry":"node_modules\\react-native-web\\dist\\exports\\ActivityIndicator\\index.js"}
+{"_e":"metro:bundling:started","_t":1784029946849,"id":"9","platform":"web","environment":null,"entry":"src\\hooks\\useCats.ts"}
+{"_e":"metro:bundling:started","_t":1784029946903,"id":"a","platform":"web","environment":null,"entry":"src\\services\\catService.ts"}
+{"_e":"metro:bundling:started","_t":1784029946915,"id":"b","platform":"web","environment":null,"entry":"node_modules\\axios\\index.js"}
+{"_e":"metro:bundling:started","_t":1784029946917,"id":"c","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\axios.js"}
+{"_e":"metro:bundling:started","_t":1784029946917,"id":"d","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\utils.js"}
+{"_e":"metro:bundling:started","_t":1784029946932,"id":"e","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\bind.js"}
+{"_e":"metro:bundling:started","_t":1784029946933,"id":"f","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\core\\Axios.js"}
+{"_e":"metro:bundling:started","_t":1784029946934,"id":"g","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\buildURL.js"}
+{"_e":"metro:bundling:started","_t":1784029946934,"id":"h","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\AxiosURLSearchParams.js"}
+{"_e":"metro:bundling:started","_t":1784029946934,"id":"i","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\toFormData.js"}
+{"_e":"metro:bundling:started","_t":1784029946935,"id":"j","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\core\\AxiosError.js"}
+{"_e":"metro:bundling:started","_t":1784029946947,"id":"k","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\core\\AxiosHeaders.js"}
+{"_e":"metro:bundling:started","_t":1784029946953,"id":"l","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\parseHeaders.js"}
+{"_e":"metro:bundling:started","_t":1784029946956,"id":"m","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\sanitizeHeaderValue.js"}
+{"_e":"metro:bundling:started","_t":1784029946957,"id":"n","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\null.js"}
+{"_e":"metro:bundling:started","_t":1784029946958,"id":"o","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\core\\InterceptorManager.js"}
+{"_e":"metro:bundling:started","_t":1784029946958,"id":"p","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\core\\dispatchRequest.js"}
+{"_e":"metro:bundling:started","_t":1784029946974,"id":"q","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\core\\transformData.js"}
+{"_e":"metro:bundling:started","_t":1784029946974,"id":"r","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\defaults\\index.js"}
+{"_e":"metro:bundling:started","_t":1784029946975,"id":"s","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\defaults\\transitional.js"}
+{"_e":"metro:bundling:started","_t":1784029946976,"id":"t","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\toURLEncodedForm.js"}
+{"_e":"metro:bundling:started","_t":1784029946976,"id":"u","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\platform\\index.js"}
+{"_e":"metro:bundling:started","_t":1784029946976,"id":"v","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\platform\\browser\\index.js"}
+{"_e":"metro:bundling:started","_t":1784029946999,"id":"w","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\platform\\browser\\classes\\URLSearchParams.js"}
+{"_e":"metro:bundling:started","_t":1784029946999,"id":"x","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\platform\\browser\\classes\\FormData.js"}
+{"_e":"metro:bundling:started","_t":1784029946999,"id":"y","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\platform\\browser\\classes\\Blob.js"}
+{"_e":"metro:bundling:started","_t":1784029947000,"id":"z","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\platform\\common\\utils.js"}
+{"_e":"metro:bundling:started","_t":1784029947000,"id":"10","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\formDataToJSON.js"}
+{"_e":"metro:bundling:started","_t":1784029947001,"id":"11","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\cancel\\isCancel.js"}
+{"_e":"metro:bundling:started","_t":1784029947015,"id":"12","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\cancel\\CanceledError.js"}
+{"_e":"metro:bundling:started","_t":1784029947016,"id":"13","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\adapters\\adapters.js"}
+{"_e":"metro:bundling:started","_t":1784029947017,"id":"14","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\adapters\\xhr.js"}
+{"_e":"metro:bundling:started","_t":1784029947017,"id":"15","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\core\\settle.js"}
+{"_e":"metro:bundling:started","_t":1784029947017,"id":"16","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\parseProtocol.js"}
+{"_e":"metro:bundling:started","_t":1784029947017,"id":"17","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\progressEventReducer.js"}
+{"_e":"metro:bundling:started","_t":1784029947034,"id":"18","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\speedometer.js"}
+{"_e":"metro:bundling:started","_t":1784029947035,"id":"19","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\throttle.js"}
+{"_e":"metro:bundling:started","_t":1784029947035,"id":"1a","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\resolveConfig.js"}
+{"_e":"metro:bundling:started","_t":1784029947036,"id":"1b","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\isURLSameOrigin.js"}
+{"_e":"metro:bundling:started","_t":1784029947036,"id":"1c","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\cookies.js"}
+{"_e":"metro:bundling:started","_t":1784029947037,"id":"1d","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\core\\buildFullPath.js"}
+{"_e":"metro:bundling:started","_t":1784029947054,"id":"1e","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\isAbsoluteURL.js"}
+{"_e":"metro:bundling:started","_t":1784029947055,"id":"1f","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\combineURLs.js"}
+{"_e":"metro:bundling:started","_t":1784029947056,"id":"1g","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\core\\mergeConfig.js"}
+{"_e":"metro:bundling:started","_t":1784029947056,"id":"1h","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\adapters\\fetch.js"}
+{"_e":"metro:bundling:started","_t":1784029947056,"id":"1i","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\composeSignals.js"}
+{"_e":"metro:bundling:started","_t":1784029947057,"id":"1j","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\trackStream.js"}
+{"_e":"metro:bundling:started","_t":1784029947071,"id":"1k","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\estimateDataURLDecodedBytes.js"}
+{"_e":"metro:bundling:started","_t":1784029947072,"id":"1l","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\env\\data.js"}
+{"_e":"metro:bundling:started","_t":1784029947073,"id":"1m","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\validator.js"}
+{"_e":"metro:bundling:started","_t":1784029947073,"id":"1n","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\cancel\\CancelToken.js"}
+{"_e":"metro:bundling:started","_t":1784029947074,"id":"1o","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\spread.js"}
+{"_e":"metro:bundling:started","_t":1784029947074,"id":"1p","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\isAxiosError.js"}
+{"_e":"metro:bundling:started","_t":1784029947083,"id":"1q","platform":"web","environment":null,"entry":"node_modules\\axios\\lib\\helpers\\HttpStatusCode.js"}
+{"_e":"metro:bundling:started","_t":1784029947089,"id":"1r","platform":"web","environment":null,"entry":"src\\utils\\fakeData.ts"}
+{"_e":"metro:bundling:started","_t":1784029947089,"id":"1s","platform":"web","environment":null,"entry":"src\\components\\Header.tsx"}
+{"_e":"metro:bundling:started","_t":1784029947090,"id":"1t","platform":"web","environment":null,"entry":"src\\theme.ts"}
+{"_e":"metro:bundling:started","_t":1784029947090,"id":"1u","platform":"web","environment":null,"entry":"src\\components\\Stories\\Stories.tsx"}
+{"_e":"metro:bundling:started","_t":1784029947090,"id":"1v","platform":"web","environment":null,"entry":"src\\components\\Stories\\StoryItem.tsx"}
+{"_e":"metro:bundling:started","_t":1784029947104,"id":"1w","platform":"web","environment":null,"entry":"src\\components\\Feed\\Feed.tsx"}
+{"_e":"metro:bundling:started","_t":1784029947104,"id":"1x","platform":"web","environment":null,"entry":"src\\components\\Feed\\PostCard.tsx"}
+{"_e":"metro:bundling:started","_t":1784029947105,"id":"1y","platform":"web","environment":null,"entry":"src\\components\\Feed\\ActionBar.tsx"}
+{"_e":"metro:bundling:started","_t":1784029947110,"id":"1z","platform":"web","environment":null,"entry":"src\\screens\\FeedScreen.tsx"}
+{"_e":"metro:bundling:started","_t":1784029947112,"id":"20","platform":"web","environment":null,"entry":"src\\navigation\\HomeStack.tsx"}
+{"_e":"metro:bundling:started","_t":1784029952766,"id":"21","platform":"web","environment":null,"entry":"src\\components\\PostDetail\\PostDetail.tsx"}
+{"_e":"metro:bundling:started","_t":1784029952773,"id":"22","platform":"web","environment":null,"entry":"src\\components\\PostDetail\\Comment.tsx"}
+{"_e":"metro:bundling:started","_t":1784029952775,"id":"23","platform":"web","environment":null,"entry":"src\\screens\\DetailScreen.tsx"}
+{"_e":"metro:bundling:started","_t":1784029972072,"id":"24","platform":"web","environment":null,"entry":"src\\data\\userData.ts"}
+{"_e":"metro:bundling:started","_t":1784029972082,"id":"25","platform":"web","environment":null,"entry":"src\\components\\Profile\\ProfileHeader.tsx"}
+{"_e":"metro:bundling:started","_t":1784029972082,"id":"26","platform":"web","environment":null,"entry":"src\\components\\Profile\\ProfileGrid.tsx"}
+{"_e":"metro:bundling:started","_t":1784029972082,"id":"27","platform":"web","environment":null,"entry":"src\\screens\\ProfileScreen.tsx"}
+{"_e":"metro:bundling:started","_t":1784030038261,"id":"28","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784030038261,"id":"28","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784030038280,"id":"28","total":1,"ms":18.6875}
+{"_e":"metro:bundling:started","_t":1784030038382,"id":"2a","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:client_log","_t":1784030038464,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1784030038464,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1784030038464,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1784030039634,"level":"warn","data":["Image: style.resizeMode is deprecated. Please use props.resizeMode."]}
+{"_e":"metro:client_log","_t":1784030055150,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1784030055152,"level":"warn","data":["Image: style.tintColor is deprecated. Please use props.tintColor."]}
+{"_e":"metro:client_log","_t":1784030057605,"level":"warn","data":["Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md"]}
+{"_e":"metro:bundling:started","_t":1784030105821,"id":"2l","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784030105821,"id":"2l","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784030105838,"id":"2l","total":1,"ms":17.4382}
+{"_e":"metro:bundling:started","_t":1784030105942,"id":"2n","platform":"web","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:client_log","_t":1784030106021,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1784030106022,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1784030106022,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1784030107010,"level":"warn","data":["Image: style.resizeMode is deprecated. Please use props.resizeMode."]}
+{"_e":"metro:client_log","_t":1784030110822,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1784030110824,"level":"warn","data":["Image: style.tintColor is deprecated. Please use props.tintColor."]}
+{"_e":"metro:client_log","_t":1784030113850,"level":"warn","data":["Animated: `useNativeDriver` is not supported because the native animated module is missing. Falling back to JS-based animation. To resolve this, add `RCTAnimation` module to this app, or remove `useNativeDriver`. Make sure to run `bundle exec pod install` first. Read more about autolinking: https://github.com/react-native-community/cli/blob/master/docs/autolinking.md"]}
+{"_e":"metro:bundling:started","_t":1784030149923,"id":"2y","platform":"web","environment":null,"entry":"node_modules\\expo-splash-screen\\build\\index.js"}
+{"_e":"metro:bundling:started","_t":1784030149923,"id":"2z","platform":"web","environment":null,"entry":"App.tsx"}
