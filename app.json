@@ -5,17 +5,20 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-    "platforms": ["ios", "android"],
-    "assetBundlePatterns": ["**/*"],
-
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "icon": "./assets/icon.png",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
-
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.catsgram.app"
@@ -26,6 +29,9 @@
         "backgroundColor": "#000000"
       },
       "package": "com.catsgram.app"
-    }
+    },
+    "plugins": [
+      "expo-splash-screen"
+    ]
   }
 }

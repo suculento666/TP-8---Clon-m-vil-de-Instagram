@@ -7,8 +7,7 @@ export const currentUser: User = {
   username: 'señora.m',
   fullName: 'Facunda Eusebich',
   bio: '🐱 Amante de los gatos | 📍 Buenos Aires',
-  // URL de avatar de placeholder mientras no haya asset local
-  avatarUrl: 'https://api.thecatapi.com/v1/images/search?limit=1',
+  avatarUrl: 'https://placecats.com/86/86',
   postsCount: 12,
   followers: 999,
   following: 163,

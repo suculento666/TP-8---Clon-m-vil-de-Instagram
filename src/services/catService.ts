@@ -14,6 +14,7 @@ import {
   FAKE_COMMENTS,
   formatRelativeDate,
 } from '../utils/fakeData'
+import { currentUser } from '../data/userData'
 
 const BASE_URL = 'https://api.thecatapi.com/v1/images/search'
 
@@ -31,32 +32,37 @@ const fetchCatImages = async (limit: number): Promise<CatImage[]> => {
 /**
  * fetchPosts: trae imágenes de la API y las convierte en objetos Post.
  *
- * Hace dos pedidos en paralelo con Promise.all:
- * - uno para las imágenes principales del feed
- * - uno para los avatares
- * Promise.all espera a que AMBOS terminen antes de continuar.
- * Es más rápido que hacerlos uno después del otro (await secuencial).
- *
- * Después combina las imágenes con datos inventados de fakeData
- * para simular publicaciones reales.
+ * Distribuye los posts entre el usuario activo y otros usuarios simulados.
+ * Los posts en índices múltiplos de 4 (0, 4, 8) se asignan al currentUser,
+ * el resto a los otros usernames. Así el perfil siempre tiene fotos propias.
  */
 export const fetchPosts = async (): Promise<Post[]> => {
+  // Dos pedidos en paralelo: imágenes del feed y avatares
   const [images, avatars] = await Promise.all([
     fetchCatImages(12),
     fetchCatImages(12),
   ])
 
-  return images.map((cat, index) => ({
-    id: cat.id,
-    imageUrl: cat.url,
-    // Si hay menos avatares que posts, el módulo (%) hace que roten
-    // volviendo al principio cuando se acaban
-    avatarUrl: avatars[index % avatars.length].url,
-    username: FAKE_USERNAMES[index % FAKE_USERNAMES.length],
-    location: FAKE_LOCATIONS[index % FAKE_LOCATIONS.length],
-    caption: FAKE_CAPTIONS[index % FAKE_CAPTIONS.length],
-    likes: Math.floor(Math.random() * 900) + 50,
-    date: formatRelativeDate(Math.floor(Math.random() * 7)),
-    comments: FAKE_COMMENTS,
-  }))
+  return images.map((cat, index) => {
+    // Cada 4 posts uno pertenece al usuario activo (índices 0, 4, 8)
+    const isMyPost = index % 4 === 0
+
+    return {
+      id: cat.id,
+      imageUrl: cat.url,
+      // Si es mi post uso mi avatar; si no, uno del pool de avatares
+      avatarUrl: isMyPost
+        ? currentUser.avatarUrl
+        : avatars[index % avatars.length].url,
+      // Si es mi post uso mi username; si no, uno del pool de usernames
+      username: isMyPost
+        ? currentUser.username
+        : FAKE_USERNAMES[index % FAKE_USERNAMES.length],
+      location: FAKE_LOCATIONS[index % FAKE_LOCATIONS.length],
+      caption: FAKE_CAPTIONS[index % FAKE_CAPTIONS.length],
+      likes: Math.floor(Math.random() * 900) + 50,
+      date: formatRelativeDate(Math.floor(Math.random() * 7)),
+      comments: FAKE_COMMENTS,
+    }
+  })
 }

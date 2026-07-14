@@ -40,9 +40,10 @@ export interface User {
 // Parámetros que recibe cada pantalla del Stack de navegación
 export type HomeStackParamList = {
   Feed: undefined
-  Detail: { post: Post }
+  Detail: { post: Post; liked: boolean }
 }
 
 export type ProfileStackParamList = {
   Profile: undefined
+  Detail: { post: Post; liked: boolean }
 }
