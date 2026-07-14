@@ -1,3 +1,14 @@
+/**
+ * HomeStack.tsx — Stack de navegación de la tab Home
+ *
+ * Un Stack Navigator apila pantallas como cartas.
+ * Cuando navegás a Detail, se apila encima de Feed.
+ * Cuando tocás "volver", se desapila y volvés al Feed.
+ *
+ * Feed: sin header propio (tiene su propio componente Header).
+ * Detail: con header nativo de React Navigation que incluye
+ *         el botón de volver automáticamente.
+ */
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import type { HomeStackParamList } from '../types'
@@ -20,11 +31,11 @@ const HomeStack = () => {
         name="Detail"
         component={DetailScreen}
         options={{
-          // Header nativo con botón volver, estilizado en negro
+          // En el detalle sí mostramos el header con la flecha de volver
           headerShown: true,
-          title: '',
+          title: '',  // sin título, solo la flecha
           headerStyle: { backgroundColor: colors.bgMain },
-          headerTintColor: colors.textPrimary,
+          headerTintColor: colors.textPrimary,  // flecha en blanco
           headerShadowVisible: false,
         }}
       />

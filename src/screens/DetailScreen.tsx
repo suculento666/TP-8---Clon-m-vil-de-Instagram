@@ -1,3 +1,13 @@
+/**
+ * DetailScreen.tsx — Pantalla de detalle de un post
+ *
+ * No llama a ninguna API porque ya tiene todos los datos.
+ * El post llega de FeedScreen a través de route.params
+ * (parámetros de navegación de React Navigation).
+ *
+ * El header con el botón de volver lo genera React Navigation
+ * automáticamente gracias a la configuración en HomeStack.
+ */
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
@@ -10,12 +20,13 @@ import { colors } from '../theme'
 type DetailRouteProp = RouteProp<HomeStackParamList, 'Detail'>
 
 const DetailScreen = () => {
-  // El post llega por route.params — lo pasó FeedScreen al navegar
+  // useRoute nos da acceso a los parámetros que pasó FeedScreen al navegar
   const route = useRoute<DetailRouteProp>()
   const { post } = route.params
 
   return (
-    // edges={['bottom']} porque el header nativo ya cubre el top
+    // edges={['bottom']}: el header nativo ya cubre el espacio superior,
+    // solo necesitamos proteger la parte inferior (home indicator en iPhone).
     <SafeAreaView style={styles.container} edges={['bottom']}>
       <PostDetail post={post} initialLiked={false} />
     </SafeAreaView>
